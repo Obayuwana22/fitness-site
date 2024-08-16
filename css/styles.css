@@ -259,7 +259,7 @@ img {
   letter-spacing: 0.8px;
   text-transform: lowercase;
   margin-bottom: 20px;
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin-top: 60px;
 }
 
@@ -292,7 +292,7 @@ img {
 }
 
 .strong-image img {
-  height: 500px;
+  height: 400px;
 }
 
 @media screen and (min-width: 768px) {
@@ -355,7 +355,7 @@ img {
 
 .start-container {
   background-color: var(--bg-clr);
-  padding-top: 100px;
+  padding-top: 30px;
 }
 
 .start-content {
@@ -409,7 +409,7 @@ img {
   font-size: 1.6rem;
   line-height: 2.8;
   letter-spacing: 0.8px;
-  padding-top: 150px;
+  padding-block: 150px;
   padding-inline: 100px;
 }
 
@@ -748,17 +748,17 @@ img {
 }
 
 .part-of-us-title {
-  position: relative;
   font-size: 1.5rem;
-  /* margin-top: 20px; */
+  margin-top: 20px;
+  position: absolute;
   font-weight: bold;
 }
 
 .part-of-us-title img {
+  /* width: 15px; */
   position: absolute;
-  left: -17px;
-  top: -5px;
-  width: 15px;
+  left: -30px;
+  top: -20px;
 }
 
 .part-of-us-transparent-word {
@@ -766,20 +766,15 @@ img {
   background-color: #fff;
   background-clip: text;
   font-size: 5rem; /* font-family: Yantramanav; */
-  position: absolute;
-  top: -25px;
-  left: -5px;
+  top: -11%;
+  left: -18%;
 }
 
 .part-of-us-description {
-  text-transform: uppercase;
   margin-top: 10px;
-}
-
-.view-more-title img {
-  position: absolute;
-  left: -4%;
-  top: -5%;
+  font-weight: light;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -796,34 +791,30 @@ img {
     margin-top: 150px;
   }
 
-  .part-of-us-transparent-word {
-    font-size: 16rem; /* font-family: Yantramanav; */
-    position: absolute;
-    top: -40px;
-    left: 260px;
-  }
-
   .part-of-us-title {
-    font-size: 6rem;
-    margin-bottom: 50px;
+    font-size: 1.5rem;
     margin-top: 20px;
-    font-weight: bold;
   }
-
+  
   .part-of-us-title img {
-    position: absolute;
-    left: -40px;
-    top: -5px;
-    width: 34px;
+    left: -30px;
+    top: -20px;
   }
-
+  
+  .part-of-us-transparent-word {
+    font-size: 5rem; /* font-family: Yantramanav; */
+    top: -11%;
+    left: -18%;
+  }
+  
   .part-of-us-description {
     text-transform: uppercase;
-    font-size: 2rem;
+    margin-top: 10px;
+    font-weight: light;
+    font-size: 1.5rem;
     margin-bottom: 30px;
-    /* width: 100%; */
-    text-align: center;
   }
+
 }
 
 /* image animation */
@@ -879,8 +870,8 @@ img {
   gap: 5rem;
   text-transform: uppercase;
   height: 637px;
-  margin-bottom: 5em;
-  margin-top: 5em;
+  margin-bottom: 10em;
+  margin-top: 30em;
 }
 
 .left-BMI-content {
@@ -967,12 +958,30 @@ img {
   margin-bottom: 2em;
 }
 
+@media screen and (min-width: 768px) {
+  .BMI-container {
+    margin-top: 20em;
+  }
+  .input-BMI-values {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    width: 100%;
+  }
+
+  .bmi-last-input {
+    width: 100%;
+    margin-bottom: 2em;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .BMI-container {
     display: flex;
     flex-direction: row;
-    /* align-items: center; */
-    /* padding-inline: 200px; */
+    align-items: center;
+    padding-inline: 50px;
+    margin-top: 0em;
   }
 
   .left-BMI-title {
@@ -1063,20 +1072,26 @@ img {
 }
 
 .hide-right-BMI {
-  display: none;
+  /* display: none; */
 }
 
-/* .circle {
+.right-BMI-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
   background-color: #000;
-  height: 610px;
-  width: 610px;
+  height: 410px;
+  width: 410px;
   border-radius: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-transform: none;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   line-height: 2.8;
   letter-spacing: 0.8px;
   text-align: left;
@@ -1094,7 +1109,7 @@ table td {
 table th,
 td {
   border-bottom: 1px solid #707070;
-  padding: 10px 50px 10px 0;
+  padding: 5px 25px 5px 0;
 }
 
 .weight-border {
@@ -1107,14 +1122,40 @@ td {
 }
 
 .circle div {
-  font-size: 1.4rem;
-  margin-top: 3rem;
-  align-self: flex-start;
-  margin-left: 110px;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  margin-left: 10px;
 }
 
 .circle div span {
   font-weight: bold;
   line-height: 2.5;
-  font-size: 1.6rem;
-} */
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .circle {
+    height: 610px;
+    width: 610px;
+    font-size: 1.6rem;
+  }
+
+  .circle div {
+    font-size: 1.4rem;
+    margin-top: 3rem;
+    align-self: flex-start;
+    margin-left: 110px;
+  }
+
+  .circle div span {
+    font-weight: bold;
+    line-height: 2.5;
+    font-size: 1.6rem;
+  }
+
+  table th,
+  td {
+    border-bottom: 1px solid #707070;
+    padding: 10px 50px 10px 0;
+  }
+}
