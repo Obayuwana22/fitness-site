@@ -16,7 +16,9 @@ body {
   background-color: var(--bg-clr);
   color: #fff;
   font-family: "Heebo", sans-serif;
+
 }
+
 
 img {
   max-width: 100%;
