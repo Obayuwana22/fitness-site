@@ -9,11 +9,12 @@
       href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="/tracker/tracker.css" />
     <title>Document</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container"  data-aos="zoom-in" data-aos-delay="500" data-aos-duration="3000">
       <h1>Workout Tracker</h1>
       <form id="workoutForm">
         <input type="text" id="exercise" placeholder="Exercise" required />
@@ -23,6 +24,10 @@
       </form>
       <ul id="workoutList"></ul>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="/tracker/tracker.js"></script>
   </body>
 </html>
