@@ -679,8 +679,8 @@ img {
   padding-block: 0;
 }
 
-.map {
-  background-color: lime;
+#map {
+  /* background-color: lime; */
   height: 100%;
   width: 100%;
 }
@@ -733,7 +733,7 @@ img {
     margin-top: 100px;
   }
 
-  .map {
+  #map {
     width: 50%;
   }
 }

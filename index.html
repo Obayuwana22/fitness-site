@@ -9,6 +9,10 @@
       href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/styles.css" />
     <title>Fitness</title>
@@ -26,9 +30,12 @@
               data-aos-duration="1000"
             />
           </div>
-          <ul class="nav-items hide-links" data-aos="zoom-in"
-          data-aos-delay="500"
-          data-aos-duration="1000">
+          <ul
+            class="nav-items hide-links"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+            data-aos-duration="1000"
+          >
             <li class="nav-item"><a href="#">home</a></li>
             <li class="nav-item"><a href="#">portfolio</a></li>
             <li class="nav-item"><a href="#">blog</a></li>
@@ -335,7 +342,7 @@
               </div>
             </div>
             <div
-              class="map"
+              id="map"
               data-aos="zoom-in"
               data-aos-delay="500"
               data-aos-duration="2000"
@@ -620,6 +627,7 @@
     <script>
       AOS.init();
     </script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.js"></script>
     <script src="index.js"></script>
   </body>
 </html>

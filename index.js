@@ -66,3 +66,12 @@ calculateBmiBtn.addEventListener("click", () => {
   bmiScore.innerHTML = bmi.toFixed(1);
 });
 
+// map api
+
+mapboxgl.accessToken = 'CwRcAnGcNXNB6sq91qTN'; // Your MapTiler API key
+const map = new mapboxgl.Map({
+    container: 'map', // container ID
+    style: 'https://api.maptiler.com/maps/e51f47f0-ffb6-4504-8a85-682832a785e5/style.json?key=CwRcAnGcNXNB6sq91qTN', // style URL
+    center: [-73.935242, 	40.730610], // starting position [lng, lat]
+    zoom: 0 // starting zoom
+});
