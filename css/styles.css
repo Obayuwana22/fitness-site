@@ -673,22 +673,10 @@ img {
 .location-container {
   padding-inline: 0;
   display: flex;
+  gap: 5rem;
   flex-direction: column;
   padding-block: 0;
 }
-
-#map {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  position: relative;
-  /* right: 0;
-  left: 0;
-  top: 0;
-  bottom: 0; */
-}
-
-
 
 
 .location-content {
@@ -706,6 +694,17 @@ img {
   position: absolute;
   top: -3px;
   left: -5px;
+}
+
+#map {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  position: relative;
+  /* right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0; */
 }
 
 
