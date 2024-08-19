@@ -10,6 +10,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -49,7 +50,6 @@ img {
   line-height: 1.8;
   letter-spacing: 1.2px;
   font-weight: 700;
-  position: relative;
 }
 
 .nav-item a {
