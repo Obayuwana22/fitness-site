@@ -124,7 +124,7 @@ locateUs.addEventListener('click', () => {
 
   map.getView().animate({
     center: zoomPoint,
-    zoom: 10,  // Desired zoom level
-    duration: 1000,  // Animation duration in milliseconds
+    zoom: 10,  
+    duration: 1000,  
   });
 })
