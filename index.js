@@ -76,17 +76,55 @@ calculateBmiBtn.addEventListener("click", () => {
 
 // map api
 
-mapboxgl.accessToken = "CwRcAnGcNXNB6sq91qTN"; // Your MapTiler API key
-const map = new mapboxgl.Map({
-  container: "map", // container ID
-  style:
-    "https://api.maptiler.com/maps/e51f47f0-ffb6-4504-8a85-682832a785e5/style.json?key=CwRcAnGcNXNB6sq91qTN", // style URL
-  center: [-73.935242, 40.73061], // starting position [lng, lat]
-  zoom: 0, // starting zoom
+const key = "CwRcAnGcNXNB6sq91qTN";
+
+const styleJson = `https://api.maptiler.com/maps/95731679-1741-427a-b293-16536ce5be8d/style.json?key=${key}`;
+
+const attribution = new ol.control.Attribution({
+  collapsible: false,
 });
 
-const marker = new maptilersdk.Marker({
-  opacity: 1,
+const map = new ol.Map({
+  target: "map",
+  controls: ol.control.defaults
+    .defaults({ attribution: false })
+    .extend([attribution]),
+  view: new ol.View({
+    constrainResolution: true,
+    center: ol.proj.fromLonLat([-73.935242, 40.73061]),
+    zoom: 2,
+  }),
+});
+olms.apply(map, styleJson);
+
+const marker = new ol.layer.Vector({
+  source: new ol.source.Vector({
+    features: [
+      new ol.Feature({
+        geometry: new ol.geom.Point(ol.proj.fromLonLat([-73.935242, 40.73061])),
+      }),
+    ],
+  }),
+  style: new ol.style.Style({
+    image: new ol.style.Icon({
+      anchor: [0.5, 1],
+      crossOrigin: "anonymous",
+      src: "https://docs.maptiler.com/openlayers/examples/default-marker/marker-icon.png",
+    }),
+  }),
+  zIndex: 1000,  
+});
+map.addLayer(marker);
+ 
+
+const locateUs = document.querySelector(".locate-us-btn")
+
+locateUs.addEventListener('click', () => {
+  const zoomPoint = ol.proj.fromLonLat([-73.935242, 40.73061]);
+
+  map.getView().animate({
+    center: zoomPoint,
+    zoom: 10,  // Desired zoom level
+    duration: 1000,  // Animation duration in milliseconds
+  });
 })
-  .setLngLat([-73.935242, 40.73061])
-  .addTo(map);

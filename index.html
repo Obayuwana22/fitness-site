@@ -6,14 +6,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap"
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/ol@v8.2.0/ol.css"
     />
-    <link
-      href="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css"
-      rel="stylesheet"
-    />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/ol@v8.2.0/dist/ol.js"></script>
+    <script src="https://unpkg.com/ol-mapbox-style@12.1.1/dist/olms.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css" />
     <title>Fitness</title>
   </head>
@@ -325,15 +323,14 @@
                 Nec suas signiferumque id. An eum labore commodo principes. Usu
                 diam noluisse cu, nam adipisci
               </p>
-              <div class="view-more">
-                <a href="#">view more</a>
-                <div class="view-more-arrow">
-                  <img
-                    src="assets/svg.qodef-svg--button-arrow.svg"
-                    alt="arrow"
-                  />
-                </div>
-              </div>
+              <button class="calculate-btn locate-us-btn">
+                locate us
+                <img
+                  class="view-more-arrow"
+                  src="assets/svg.qodef-svg--button-arrow.svg"
+                  alt="arrow"
+                />
+              </button>
             </div>
             <div
               id="map"
