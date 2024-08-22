@@ -71,7 +71,7 @@ calculateBmiBtn.addEventListener("click", () => {
   const bmi = (weight.value / (height.value * height.value)) * 703;
 
   const bmiScore = document.querySelector(".bmi-score");
-  bmiScore.innerHTML = bmi.toFixed(1);
+  bmiScore.textContent = bmi.toFixed(1);
 });
 
 // map api

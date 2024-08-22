@@ -1046,7 +1046,7 @@ img {
   }
 }
 
-.calculate-btn {
+.calculate-btn, .locate-us-btn {
   display: flex;
   align-items: center;
   gap: 2rem;
